@@ -9,6 +9,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    font-size: 14px;
 }
 
 .container{
@@ -16,7 +17,12 @@ body{
     margin: 0 auto;
 }
 
+.underline{
+    text-decoration: none;
+}
+
 .header__menu{
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +53,10 @@ body{
     align-items: center;
 }
 
+.nav__list li:first-child a{
+    color: #DA251C;
+}
+
 /* .burger{
     background: #DA251C;
     width: 18px;
@@ -63,18 +73,19 @@ body{
 .contact__list li:first-child{
     background-image: url('../img/email_black_24dp\ 1.svg');
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: center left 26px;
 }
 
 .contact__list li:last-child{
     background-image: url('../img/call_black_24dp\ 1.svg');
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: center left 26px;
 }
 
 .contact__list li{
     display: flex;
     align-items: center;
+    padding-left: 60px;
 }
 
 .contact__list span{
@@ -186,10 +197,14 @@ body{
 }
 
 .FAQ__box--bg{
-    width: 255px;
-    height: 255px;
+    width: 245px;
+    height: 245px;
     display: flex;
     align-items: end;
+    border-radius: 6px;
+}
+
+.FAQ__box--bg p{
     padding-bottom: 20px;
     padding-left: 20px;
 }
@@ -259,4 +274,299 @@ body{
     line-height: 24px;
     color: #E9E9E9;
     margin-top: 10px;
+}
+
+.second__container{
+   max-width: 980px;
+   margin: 0 auto; 
+}
+
+.stock{
+    margin-top: 100px;
+}
+
+.section__title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.stock__nav__header , .stock__nav__footer{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+}
+
+.stock__nav__header li ,.stock__nav__footer li{
+    padding: 12px 16px;
+    background: #E9E9E9;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+
+}
+
+.stock__nav__header li:first-child, .stock__nav__footer li:first-child{
+    background: #DA251C;
+    color: #fff;
+}
+
+.stock__product{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 275px;
+}
+
+.product__img{
+    background: #FFFFFF;
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+}
+
+.product__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.product__title{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #DA251C;
+    max-width: 360px;
+}
+
+.product__subtitle{
+    font-weight: 500;
+    line-height: 17px;
+    margin-top: 10px;
+}
+
+span.gray{
+    color: #7A7A7A;
+}
+
+.product__text--center{
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.product__btn{
+    display: block;
+    margin-top: 20px;
+    color: #DA251C;
+}
+
+
+.product__price{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 4px;
+}
+
+.product__info p{
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.product__info__btn{
+    display: block;
+    padding: 19px 22px;
+    background: #DA251C;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.product__info{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.news{
+    margin-top: 100px;
+}
+
+.news__grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news__block{
+    width: 475px;
+    margin-top: 60px;
+}
+
+.news__block h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration-line: underline;
+    color: #DA251C;
+    margin-top: 20px;
+}
+
+.news__block p{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+
+.news__img{
+    border-radius: 10px;
+}
+
+.news__block--last{
+    background: #E9E9E9;
+    border-radius: 10px;   
+    height: 268px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news__block--last a{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+}
+
+.footer{
+    background: #333333;
+    margin-top: 100px;
+}
+
+.contact__section{
+    padding-top: 100px;
+    background: #FAFAFA;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.contact__text{
+    margin-top: 60px;
+    font-size: 18px;
+    line-height: 28px;
+    max-width: 420px;
+}
+
+.contact__text p{
+    margin-bottom: 30px;
+}
+
+.contact__btn{
+    color: #000;
+}
+
+.contact__tel{
+    color: #DA251C;
+    margin-right: 30px;
+}
+
+
+
+.contact__social{
+    margin-top: 45px;
+}
+
+.contact__social a{
+    margin-right: 10px;
+}
+
+.contact__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__partners{
+    margin-top: 90px;
+}
+
+.contact__partners img:first-child{
+    mix-blend-mode: darken;
+
+}
+
+.footer .container{
+    color: #fff;
+    margin-top: 100px;
+}
+
+.footer__text{
+    max-width: 240px;
+}
+
+.footer__text h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    width: 165px;
+}
+
+.footer__text p{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 26px;
+}
+
+.footer__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+}
+
+.footer__nav__group h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+.footer__nav__group:first-child{
+    margin-right: 140px;
+}
+
+.footer__nav__list{
+    list-style: none;
+}
+
+.footer__nav{
+    display: flex;
+}
+
+.footer__nav__list a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.footer__footer{
+    margin-top: 60px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #444444;
+}
+
+.footer__footer a{
+    color: #fff;
 }
