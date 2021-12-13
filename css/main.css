@@ -55,16 +55,44 @@ body{
 
 .nav__list li:first-child a{
     color: #DA251C;
+    position: relative;
+    padding-left: 10px;
 }
 
-/* .burger{
+
+.burger {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 20px;
+} 
+
+.burger span{
+    position: absolute;
     background: #DA251C;
     width: 18px;
-    height: 3px;
-    position: relative;
-    top: 0;
-    left: 10px;
-} */
+    height: 2px;
+    left: 0;
+    top: 9px;
+}
+
+.burger::after, .burger::before{
+    content: '';
+    position: absolute;
+    background: #DA251C;
+    width: 18px;
+    height: 2px;
+    left: 0;
+}
+
+
+.burger::after{
+    top: 16px;
+}
+
+.burger::before{
+    top: 2px; 
+}
 
 .header__menu li:last-child{
     margin-right: 0;
@@ -95,6 +123,75 @@ body{
 .contact__list a{
     color: #DA251C;
 }
+
+.catalog{
+    display: none;
+}
+
+.catalog__boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.catalog__box{
+    background: #E9E9E9;
+    border-radius: 10px;
+    width: 300px;
+    height: 581px;
+    padding: 30px;
+}
+
+.catalog__img{
+    width: 260px;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__box img{
+    mix-blend-mode: multiply;
+}
+
+.catalog__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    height: 72px;
+}
+
+.catalog__list{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.catalog__list li{
+    margin-bottom: 15px;
+}
+
+.catalog__list li a{
+    color: #DA251C;
+    font-weight: 600;
+font-size: 13px;
+line-height: 16px;
+}
+
+.catalog__btn{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding: 21px 18px 21px 52px;
+    background: #DA251C;
+    border-radius: 10px;
+    display: inline-block;
+    background-image: url('../img/settings_black_24dp\ 1.svg');
+    background-repeat: no-repeat;
+    background-position: center left 21px;
+    margin-top: 10px;
+}
+
+
 
 .header__wrapper{
     background-image: linear-gradient(90deg, #000000 0%, rgba(27, 27, 27, 0) 100%), url('../img/header.gif');
