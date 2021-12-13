@@ -65,6 +65,7 @@ body{
     position: relative;
     width: 18px;
     height: 20px;
+    cursor: pointer;
 } 
 
 .burger span{
@@ -243,6 +244,7 @@ line-height: 16px;
     height: 680px;
     border-radius: 10px;
     background:linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 4.png') no-repeat center center;
+    background-size: cover;
     padding: 60px;
     position: relative;
 }
@@ -274,10 +276,12 @@ line-height: 16px;
 
 .main-machine__box:first-child{
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 2.png') no-repeat center center;
+    background-size: cover;
 }
 
 .main-machine__box:last-child{
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 5.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ-machine{
@@ -534,6 +538,7 @@ span.gray{
 
 .news__img{
     border-radius: 10px;
+    width: 100%;
 }
 
 .news__block--last{
@@ -543,6 +548,7 @@ span.gray{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .news__block--last a{
@@ -727,4 +733,140 @@ span.gray{
     .contact__list li:last-child{
         background-position: center left 16px;
     }
+}
+
+@media screen  and (max-width: 768px) {
+
+    .container, .second__container{
+        max-width: 728px;
+    }
+
+    .header__wrapper{
+        padding: 81px 0 80px 30px;
+    }
+
+    .main-machine__box{
+        width: 236px;
+        height: 390px;
+        padding: 30px;
+    }
+
+    .machine__title{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .machine__content{
+        margin-bottom: 30px;
+    }
+
+    .FAQ-machine{
+        display: none;
+    }
+
+    .services{
+        background: none;
+        padding: 0;
+        
+    }
+
+    .services__title, .services__box__title{
+        color: #000;
+    }
+
+    .services__title{
+        margin-bottom: 30px;
+    }
+
+    .services__box__text{
+        color: #7A7A7A;
+    }
+
+    .services__box{
+        max-width: 100%;
+        margin-bottom: 20px;    
+    }
+
+    .stock__product{
+        margin-top: 30px;
+    }
+
+    .product__title{
+        font-size: 16px;
+        line-height: 20px;
+        max-width: 256px;
+    }
+
+    .product__text--center{
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .product__btn{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .product__price{
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .product__info p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .product__info__btn{
+        font-size: 18px;
+        line-height: 22px;
+        padding: 16px 40px;
+    }
+
+
+    .news__block{
+        width: 349px;
+    }
+
+    .news__block--last{
+        height: 196px;
+    }
+
+    .img__map{
+        max-width: 290px;
+        object-fit: cover;
+        
+    }
+
+    .contact__pnone{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer__menu{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer__text {
+        max-width: 100%;
+    }
+
+    .footer__footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__footer a{
+        order: -1;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .container, .second__container{
+        max-width: 371px;
+    }
+    
 }
