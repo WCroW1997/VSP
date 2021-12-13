@@ -102,6 +102,7 @@ body{
     background-image: url('../img/email_black_24dp\ 1.svg');
     background-repeat: no-repeat;
     background-position: center left 26px;
+    font-weight: 600;
 }
 
 .contact__list li:last-child{
@@ -297,8 +298,9 @@ line-height: 16px;
     width: 245px;
     height: 245px;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     border-radius: 6px;
+    background-size: cover;
 }
 
 .FAQ__box--bg p{
@@ -308,26 +310,32 @@ line-height: 16px;
 
 .FAQ__box:nth-child(1) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block-5.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box:nth-child(2) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block-4.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box:nth-child(3) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block-3.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box:nth-child(4) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block-2.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box:nth-child(5) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block-1.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box:nth-child(6) .FAQ__box--bg{
     background: linear-gradient(0deg, #1B1B1B 0%, rgba(27, 27, 27, 0) 100%), url('../img/Image__block.png') no-repeat center center;
+    background-size: cover;
 }
 
 .FAQ__box p{
@@ -666,4 +674,57 @@ span.gray{
 
 .footer__footer a{
     color: #fff;
+}
+
+
+@media screen and (max-width:1440px) {
+    .container{
+        max-width: 1380px;
+    }
+    
+    .FAQ__box{
+        width: 205px;
+        height: 205px;
+    }
+
+    .FAQ__box--bg {
+        width: 175px;
+        height: 175px;   
+    }
+
+    .FAQ__box--bg p{
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .services{
+        padding-left: 200px;
+    }
+
+    .main-machine__box{
+        width: 440px;
+        height: 512px;
+    }
+
+    .header__menu a{
+        font-size: 14px;
+    }
+
+    .header__menu li{
+        margin-right: 10px;
+        padding: 21px 12px;
+    }
+
+    .contact__list li{
+        padding-left: 45px;
+    }
+
+    .contact__list li:first-child{
+        background-position: center left 16px;
+        
+    }
+
+    .contact__list li:last-child{
+        background-position: center left 16px;
+    }
 }
