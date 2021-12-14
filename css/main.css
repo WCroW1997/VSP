@@ -146,6 +146,14 @@ body.lock{
     color: #DA251C;
 }
 
+.catalog--mobile{
+    display: none;
+}
+
+.logo img:last-child{
+    display: none;
+}
+
 .catalog{
     display: none;
     width: 100%;
@@ -189,6 +197,7 @@ body.lock{
 
 .catalog__box img{
     mix-blend-mode: multiply;
+    width: 100%;
 }
 
 .catalog__title{
@@ -943,26 +952,34 @@ span.gray{
         height: 100%;
         width: 100%;
         z-index: 5;
+
+    }
+    
+    .header__menu.active{
+        overflow: auto;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
 
-    .header__menu::before{
+    /* .header__menu::before{
         content: '';
         width: 100%;
         height: 1024px;
         position: absolute;
         top: 0;
         left: 0;
-        background: #fff;
         display: none;
     }
 
     .header__menu.active::before{
         display: block;
         overflow: auto;
-    }
+    } */
 
-    .burger{
+    .nav__list li:first-child{
         display: none;
     }
 
@@ -976,6 +993,7 @@ span.gray{
         position: absolute;
         top: 80px;
         left: 20px;
+        justify-content: flex-start;
 
     }
 
@@ -986,9 +1004,10 @@ span.gray{
         height: 60px;
     }
 
-    .logo img{
+    .logo img {
         height: 60px;
     }
+
 
     .humburger__menu{
         position: absolute;
@@ -1002,6 +1021,23 @@ span.gray{
         top: 24px;
         right: 0px;
         padding-right: 50px;
+    }
+
+    .humburger__menu.active{
+        color: #000;
+    }
+
+
+    .humburger__menu.active span::before{
+        background: #000;
+        transform: rotate(45deg);
+        top: 0;
+    }
+
+    .humburger__menu.active span::after{
+        background: #000;
+        transform: rotate(-45deg);
+        top: 0;
     }
 
     .humburger__menu span{
@@ -1037,12 +1073,77 @@ span.gray{
         width: 95%;
     }
 
+    
+
+    .contact.active{
+        top: 560px;
+    }
+
     .contact__list li{
         flex-basis: 48%;
     }
 
-    .catalog.active{
-        position: relative;
+    .catalog--mobile.active{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .catalog__box{
+        width: 236px;
+        height: 382px;
+        padding: 20px;
+    }
+
+    .catalog__box:nth-child(2){
+        margin: 0 10px;
+    }
+
+    .catalog__img{
+        width: 193px;
+        height: 193px;
+        object-fit: cover;
+    }
+
+    /* .catalog__img img{
+        width: 170px;
+
+    } */
+
+    .catalog__list, .catalog__btn{
+        display: none !important;
+    }
+
+    .catalog__title{
+        width: 196px;
+    }
+
+    .header__menu a{
+        padding: 12px;
+    }
+
+    .open.active{
+        display: none;
+    }
+
+    .close__burger{
+        display: none;
+    }
+
+    .close__burger.active{
+        display: block;
+    }
+
+    .logo.active{
+        background: #fff;
+    }
+
+    .logo.active img:first-child{
+        display: none;
+    }
+
+    .logo.active img:last-child{
+        display: block;
+        padding-left: 20px;
     }
 }
 
@@ -1117,6 +1218,7 @@ span.gray{
 
     .product__content{
         max-width: 210px;
+        flex-direction: column;
     }
 
     .product__info{
@@ -1152,5 +1254,54 @@ span.gray{
     .footer__nav{
         flex-direction: column;
         gap: 30px;
+    }
+
+    .contact__list{
+        flex-direction: column;
+        gap: 10px;
+        
+    }
+
+    .contact__list li:first-child{
+        padding: 12px 54px;
+    }
+
+    .header__menu li:last-child{
+        margin-right: 15px;
+    }
+
+    .header__wrapper{
+        margin-top: 190px;
+    }
+
+    .nav__list{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .catalog__boxes{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .catalog__box{
+        width: 371px;
+        height: 119px;
+        display: flex;
+    }
+
+    .catalog__img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .catalog--mobile{
+        position: relative;
+        top: 30px;
+    }
+
+    .contact.active{
+        top: 600px;
     }
 }

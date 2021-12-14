@@ -1,11 +1,15 @@
 let menuCatalog = document.querySelector('.burger');
 let catalog = document.querySelector('.catalog')
-let close = document.querySelector('.close')
-let menuBtn = document.querySelector('.humburger__menu')
+let close = document.querySelector('.close');
+let menuBtn = document.querySelector('.humburger__menu');
 let headerMenu = document.querySelector('.header__menu');
 let lock = document.querySelector('body');
-let navigation = document.querySelector('.nav__list')
-let contact = document.querySelector('.contact')
+let navigation = document.querySelector('.nav__list');
+let contact = document.querySelector('.contact');
+let mobileCatalog = document.querySelector('.catalog--mobile');
+let logo = document.querySelector('.logo');
+let closeBtn = document.querySelector('.close__burger')
+let openBtn = document.querySelector('.open')
 
 menuCatalog.addEventListener('click', function(){
 	menuCatalog.classList.add('active');
@@ -25,9 +29,13 @@ close.addEventListener('click', function(){
 
 
 menuBtn.addEventListener('click', function(){
-	catalog.classList.toggle('active');
+	mobileCatalog.classList.toggle('active');
 	navigation.classList.toggle('active');
 	contact.classList.toggle('active');
 	headerMenu.classList.toggle('active');
+	logo.classList.toggle('active');
 	lock.classList.toggle('lock');
+	openBtn.classList.toggle('active');
+	closeBtn.classList.toggle('active');
+	menuBtn.classList.toggle('active');
 })
