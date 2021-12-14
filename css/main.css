@@ -12,6 +12,10 @@ body{
     font-size: 14px;
 }
 
+body.lock{
+    overflow: hidden;
+}
+
 .container{
     max-width: 1800px;
     margin: 0 auto;
@@ -28,24 +32,26 @@ body{
     align-items: center;
 }
 
-.header__menu ul{
+.nav__list, .contact__list{
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
 .header__menu li{
-    padding: 25px 26px;
-    background: #E9E9E9;
-    border-radius: 10px;
     margin-right: 16px;
 }
 
 .header__menu a{
+    display: block;
+    padding: 25px 22px;
+    background: #E9E9E9;
+    border-radius: 10px;
     color: #000000;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
+    
 }
 
 .nav__list li:first-child{
@@ -63,9 +69,16 @@ body{
 .burger {
     display: block;
     position: relative;
-    width: 18px;
-    height: 20px;
+    width: 160px;   
     cursor: pointer;
+    color: #DA251C;
+    text-decoration: underline;
+    background: #E9E9E9;
+    border-radius: 10px;
+    padding: 22px 12px;
+    font-size: 14px;
+    line-height: 17px;  
+    padding-left: 40px;
 } 
 
 .burger span{
@@ -73,8 +86,8 @@ body{
     background: #DA251C;
     width: 18px;
     height: 2px;
-    left: 0;
-    top: 9px;
+    left: 12px;
+    top: 30px;
 }
 
 .burger::after, .burger::before{
@@ -83,20 +96,24 @@ body{
     background: #DA251C;
     width: 18px;
     height: 2px;
-    left: 0;
+    left: 12px;
 }
 
 
 .burger::after{
-    top: 16px;
+    top: 36px;
 }
 
 .burger::before{
-    top: 2px; 
+    top: 24px; 
 }
 
 .header__menu li:last-child{
     margin-right: 0;
+}
+
+.humburger__menu{
+    display: none;
 }
 
 .contact__list li:first-child{
@@ -104,6 +121,7 @@ body{
     background-repeat: no-repeat;
     background-position: center left 26px;
     font-weight: 600;
+    padding-right: 20px;
 }
 
 .contact__list li:last-child{
@@ -116,6 +134,8 @@ body{
     display: flex;
     align-items: center;
     padding-left: 60px;
+    background: #E9E9E9;
+    border-radius: 10px;
 }
 
 .contact__list span{
@@ -128,11 +148,27 @@ body{
 
 .catalog{
     display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(10px);
+    padding: 200px 0;
+
+}
+
+.catalog.active{
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: auto;
 }
 
 .catalog__boxes{
     display: flex;
     justify-content: space-between;
+
 }
 
 .catalog__box{
@@ -174,8 +210,8 @@ body{
 .catalog__list li a{
     color: #DA251C;
     font-weight: 600;
-font-size: 13px;
-line-height: 16px;
+    font-size: 13px;
+    line-height: 16px;
 }
 
 .catalog__btn{
@@ -193,7 +229,34 @@ line-height: 16px;
     margin-top: 10px;
 }
 
+.close{
+    margin-bottom: 120px;
+    position: absolute;
+    right: 65px;
+    top: 65px;
+    padding-right: 20px;
+    cursor: pointer;
+}
 
+
+
+.close span::before, .close span::after{
+    content: '';
+    width: 18px;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    right: 0;    
+    top: 8px;
+}
+
+.close span::before{
+    transform: rotate(45deg);
+}
+
+.close span::after{
+    transform: rotate(-45deg);
+}
 
 .header__wrapper{
     background-image: linear-gradient(90deg, #000000 0%, rgba(27, 27, 27, 0) 100%), url('../img/header.gif');
@@ -475,6 +538,14 @@ span.gray{
     color: #DA251C;
 }
 
+.product__content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 740px;
+    width: 730px; 
+    height: 100%;  
+}
+
 
 .product__price{
     font-weight: 600;
@@ -502,7 +573,6 @@ span.gray{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 }
 
 .news{
@@ -551,11 +621,12 @@ span.gray{
 
 }
 
-.news__block--last a{
+.news__block--last{
     font-size: 18px;
     line-height: 22px;
     text-align: center;
     color: #000000;
+
 }
 
 .footer{
@@ -607,6 +678,8 @@ span.gray{
 
 .contact__partners{
     margin-top: 90px;
+    overflow: hidden;
+
 }
 
 .contact__partners img:first-child{
@@ -683,6 +756,8 @@ span.gray{
 }
 
 
+
+
 @media screen and (max-width:1440px) {
     .container{
         max-width: 1380px;
@@ -714,15 +789,13 @@ span.gray{
 
     .header__menu a{
         font-size: 14px;
-    }
-
-    .header__menu li{
         margin-right: 10px;
         padding: 21px 12px;
     }
 
     .contact__list li{
         padding-left: 45px;
+
     }
 
     .contact__list li:first-child{
@@ -743,6 +816,7 @@ span.gray{
 
     .header__wrapper{
         padding: 81px 0 80px 30px;
+        margin-top: 160px;
     }
 
     .main-machine__box{
@@ -861,6 +935,114 @@ span.gray{
 
     .footer__footer a{
         order: -1;
+    }
+
+    .header__menu{
+        flex-direction: column;
+        margin-top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 5;
+    }
+
+
+    .header__menu::before{
+        content: '';
+        width: 100%;
+        height: 1024px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        display: none;
+    }
+
+    .header__menu.active::before{
+        display: block;
+        overflow: auto;
+    }
+
+    .burger{
+        display: none;
+    }
+
+    .nav__list{
+        display: none;
+    }
+
+    .nav__list.active{
+        display: flex;
+        z-index: 3;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+
+    }
+
+    .logo{
+        position: absolute;
+        width: 100%;
+        background:#DA251C;
+        height: 60px;
+    }
+
+    .logo img{
+        height: 60px;
+    }
+
+    .humburger__menu{
+        position: absolute;
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin: 0px 5px;
+        z-index: 2;
+        top: 24px;
+        right: 0px;
+        padding-right: 50px;
+    }
+
+    .humburger__menu span{
+        width: 18px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top: 8px;
+        right: 25px;
+    }
+
+    .humburger__menu span::before, .humburger__menu span::after{
+        content: '';
+        position: absolute;
+        /* right: 25px; */
+        width: 18px;
+        height: 2px;
+        background: #fff;
+    }
+
+    .humburger__menu span::before{
+        top: -6px;
+    }
+
+    .humburger__menu span::after{
+        top: 6px;
+    }
+
+    .contact{
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        width: 95%;
+    }
+
+    .contact__list li{
+        flex-basis: 48%;
+    }
+
+    .catalog.active{
+        position: relative;
     }
 }
 
