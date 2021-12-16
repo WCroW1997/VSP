@@ -54,15 +54,40 @@ body.lock{
     
 }
 
-.nav__list li:first-child{
+.burger__item{
     display: flex;
     align-items: center;
 }
 
-.nav__list li:first-child a{
+.burger__item a{
     color: #DA251C;
     position: relative;
     padding-left: 10px;
+}
+
+.nav__list__drops{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 120px;
+    background: #fff;
+    width: 385px;
+    padding: 20px;
+}
+
+
+.nav__list__drops a{
+    background: #fff;
+}
+
+.header__menu .btn__servieses{
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__list li:hover .nav__list__drops{
+    display: inherit;
 }
 
 
@@ -75,7 +100,7 @@ body.lock{
     text-decoration: underline;
     background: #E9E9E9;
     border-radius: 10px;
-    padding: 22px 12px;
+    padding: 25px 12px;
     font-size: 14px;
     line-height: 17px;  
     padding-left: 40px;
@@ -197,7 +222,7 @@ body.lock{
 
 .catalog__box img{
     mix-blend-mode: multiply;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .catalog__title{
@@ -302,6 +327,10 @@ body.lock{
     line-height: 22px;
 }
 
+.wrapper__link img{
+    margin-left: 8px;
+}
+
 .machine{
     margin-top: 60px;
 }
@@ -312,7 +341,7 @@ body.lock{
 }
 
 .main-machine__box{
-    width: 580px;
+    flex-basis: 33%;
     height: 680px;
     border-radius: 10px;
     background:linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 4.png') no-repeat center center;
@@ -322,8 +351,10 @@ body.lock{
 }
 
 .machine__content{
-    position: absolute;
-    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
     margin-bottom: 60px;
 }
 
@@ -336,6 +367,8 @@ body.lock{
 }
 
 .machine__btn{
+    font-family: inherit;
+    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
@@ -343,7 +376,13 @@ body.lock{
     padding: 18px 22px;
     background: #DA251C;
     border-radius: 10px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+}
+
+.machine__btn img{
+    margin-left: 30px;
 }
 
 .main-machine__box:first-child{
@@ -363,16 +402,16 @@ body.lock{
 }
 
 .FAQ__box{
-    width: 275px;
-    height: 275px;
+    width: 255px;
+    height: 255px;
     border: 4px solid #DA251C;
     border-radius: 10px;
     padding: 10px;
 }
 
 .FAQ__box--bg{
-    width: 245px;
-    height: 245px;
+    width: 225px;
+    height: 225px;
     display: flex;
     align-items: flex-end;
     border-radius: 6px;
@@ -447,6 +486,11 @@ body.lock{
     font-size: 24px;
     line-height: 36px;
     color: #fff;
+    background: linear-gradient(90deg, #FFFFFF 0%, #727272 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+
 }
 
 .services__box__text{
@@ -687,12 +731,18 @@ span.gray{
 
 .contact__partners{
     margin-top: 90px;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
 
 }
 
 .contact__partners img:first-child{
     mix-blend-mode: darken;
+
+}
+
+.img__map{
+    border-radius: 10px;
 
 }
 
@@ -803,7 +853,7 @@ span.gray{
     .header__menu a{
         font-size: 14px;
         margin-right: 10px;
-        padding: 21px 12px;
+        padding: 21px 6px;
     }
 
     .contact__list li{
@@ -818,6 +868,10 @@ span.gray{
 
     .contact__list li:last-child{
         background-position: center left 16px;
+    }
+
+    .header__wrapper{
+        margin-top: 140px;
     }
 }
 
@@ -971,7 +1025,7 @@ span.gray{
 
     .catalog__img{
         width: 100%;
-        height: 193px;
+        height: 215px;
         object-fit: cover;
     }
 
@@ -1059,10 +1113,17 @@ span.gray{
 
     .services__title, .services__box__title{
         color: #000;
+        -webkit-text-fill-color:inherit;
+
     }
 
     .services__title{
         margin-bottom: 30px;
+    }
+
+    .services__box__title{
+        font-size: 16px;
+        line-height: 28px;
     }
 
     .services__box__text{
@@ -1147,6 +1208,9 @@ span.gray{
         order: -1;
     }
 
+    .product__img{
+        margin-right: 15px;
+    }
     
 }
 
@@ -1212,6 +1276,7 @@ span.gray{
     .machine__btn{
         font-size: 18px;
         line-height: 22px;
+        
     }
 
     .services__title{
@@ -1219,10 +1284,6 @@ span.gray{
         line-height: 28px;
     }
 
-    .services__box__title{
-        font-size: 16px;
-        line-height: 28px;
-    }
 
     .section__title{
         font-size: 24px;
