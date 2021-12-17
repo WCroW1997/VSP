@@ -4,12 +4,14 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 14px;
+}
+
+a{
+    font-family: inherit;
 }
 
 body.lock{
@@ -44,7 +46,7 @@ body.lock{
 
 .header__menu a{
     display: block;
-    padding: 25px 22px;
+    padding: 25px 18px;
     background: #E9E9E9;
     border-radius: 10px;
     color: #000000;
@@ -82,7 +84,7 @@ body.lock{
 
 .header__menu .btn__servieses{
     display: flex;
-    align-items: center;
+    padding: 23px;
 }
 
 
@@ -92,18 +94,18 @@ body.lock{
 
 
 .burger {
-    display: block;
-    position: relative;
-    width: 160px;   
+    display: flex;
+    position: relative;   
     cursor: pointer;
     color: #DA251C;
     text-decoration: underline;
     background: #E9E9E9;
     border-radius: 10px;
-    padding: 25px 12px;
-    font-size: 14px;
+    padding: 25px 10px;
+    font-size: 16px;
     line-height: 17px;  
-    padding-left: 40px;
+    padding-left: 36px;
+    align-items: center;
 } 
 
 .burger span{
@@ -112,7 +114,7 @@ body.lock{
     width: 18px;
     height: 2px;
     left: 12px;
-    top: 30px;
+    top: 32px;
 }
 
 .burger::after, .burger::before{
@@ -126,11 +128,11 @@ body.lock{
 
 
 .burger::after{
-    top: 36px;
+    top: 38px;
 }
 
 .burger::before{
-    top: 24px; 
+    top: 26px; 
 }
 
 .header__menu li:last-child{
@@ -343,12 +345,13 @@ body.lock{
 }
 
 .main-machine{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 32.5%);
+    grid-template-rows: 100%;
+    gap: 15px;
 }
 
 .main-machine__box{
-    flex-basis: 33%;
     height: 680px;
     border-radius: 10px;
     background:linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 4.png') no-repeat center center;
@@ -404,12 +407,14 @@ body.lock{
 
 .FAQ-machine{
     margin-top: 60px;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: 100%;
+    gap: 12px;
 }
 
 .FAQ__box{
-    width: 255px;
+    width: 100%;
     height: 255px;
     border: 4px solid #DA251C;
     border-radius: 10px;
@@ -417,8 +422,8 @@ body.lock{
 }
 
 .FAQ__box--bg{
-    width: 225px;
-    height: 225px;
+    width: 100%x;
+    height: 100%;
     display: flex;
     align-items: flex-end;
     border-radius: 6px;
@@ -874,7 +879,6 @@ span.gray{
     }
 
     .main-machine__box{
-        width: 33%;
         height: 512px;
         display: flex;
         
