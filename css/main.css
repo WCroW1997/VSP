@@ -302,6 +302,13 @@ body.lock{
     margin-top: 40px;
     padding: 165px 0 165px 60px;
     color: #fff;
+    position: relative;
+}
+
+.wrapper__logo{
+    position: absolute;
+    top: 40px;
+    right: 40px;
 }
 
 .wrapper__title{
@@ -538,6 +545,12 @@ body.lock{
     color: #fff;
 }
 
+.stock__nav__footer li:last-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .stock__product{
     margin-top: 60px;
     display: flex;
@@ -615,11 +628,14 @@ span.gray{
 }
 
 .product__info__btn{
-    display: block;
+    font-family: inherit;
+    display: flex;
     padding: 19px 22px;
     background: #DA251C;
     border-radius: 10px;
     color: #FFFFFF;
+    align-items: center;
+    gap: 10px;
 }
 
 .product__info{ 
@@ -1193,6 +1209,7 @@ span.gray{
     .footer__menu{
         flex-direction: column;
         gap: 30px;
+        padding: 10px;
     }
 
     .footer__text {
@@ -1237,6 +1254,45 @@ span.gray{
     .product__info__btn{
         margin-top: 20px;
     }
+
+    .contact__block{
+        flex-direction: column;
+    }
+
+    .img__map{
+        order: -1;
+        width: 371px;
+        height: 180px;  
+        margin-top: 20px;
+    }
+
+    .main-machine{
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .main-machine__box{
+        width: 70%;
+        height: 290px;  
+    }
+
+    .contact__text{
+        padding: 10px;
+    }
+
+    .news__block {
+        width: 70%;
+    }
+
+    .stock{
+        padding: 10px;
+    }
+
+    .services{
+        padding: 10px;
+    }
+
 }
 
 @media screen and (max-width:410px) {
@@ -1259,15 +1315,9 @@ span.gray{
         line-height: 17px;
     }
 
-    .main-machine{
-        flex-direction: column;
-        gap: 20px;
-    }
+
     
-    .main-machine__box{
-        width: 371px;
-        height: 290px;  
-    }
+
 
     .machine__title{
         font-size: 14px;
@@ -1316,12 +1366,7 @@ span.gray{
         margin-top: 30px;
     }
 
-    .img__map{
-        order: -1;
-        width: 371px;
-        height: 180px;  
-        border-radius: 10px;
-    }
+
 
     .contact__text{
         margin-top: 0;
