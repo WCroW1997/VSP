@@ -388,7 +388,7 @@ body.lock{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    max-width: 220px;
+    max-width: 230px;
 }
 
 .machine__btn img{
@@ -852,6 +852,20 @@ span.gray{
 }
 
 
+@media screen and (max-width:1570px) {
+    .header__menu a{
+        padding: 25px 5px;
+    }
+    
+}
+
+@media screen and (max-width:1480px) {
+    .header__menu a{
+        font-size: 14px;
+    }
+    
+}
+
 
 
 @media screen and (max-width:1440px) {
@@ -904,9 +918,17 @@ span.gray{
         background-position: center left 16px;
     }
 
-    .header__wrapper{
-        margin-top: 140px;
+    .header__menu .btn__servieses{
+        padding: 20px;
     }
+
+    .burger{
+        font-size: 14px;
+    }
+    .header__menu li{
+        margin-right: 10px;
+    }
+    
 }
 
 @media screen  and (max-width: 1200px){
@@ -916,6 +938,10 @@ span.gray{
 
     .FAQ-machine{
         display: none;
+    }
+
+    .header__wrapper{
+        margin-top: 140px;
     }
 
     .header__menu{
