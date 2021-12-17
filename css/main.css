@@ -937,6 +937,10 @@ span.gray{
     .header__menu li{
         margin-right: 10px;
     }
+
+    .machine__btn img{
+        margin-left: 20px;
+    }
     
 }
 
@@ -1144,7 +1148,30 @@ span.gray{
         width: 48%;
     }
 
+
+    .machine__btn img{
+        margin-left: 15px;
+    }
 }
+
+@media screen  and (max-width: 1015px) {
+    .machine__btn{
+        font-size: 20px;
+        line-height: 22px;
+        max-width: 180px;
+        padding: 18px 10px;
+    }
+
+    .machine__btn img{
+        margin-left: 5px;
+    }
+}
+
+@media screen  and (max-width: 848px) {
+    .machine__btn{
+        font-size: 18px;
+    }
+}   
 
 @media screen  and (max-width: 768px) {
 
@@ -1172,7 +1199,10 @@ span.gray{
         margin-bottom: 30px;
     }
 
-    
+    .machine__btn{
+        max-width: 145px;
+
+    }
 
     .services{
         background: none;
@@ -1320,6 +1350,7 @@ span.gray{
     }
 
     .main-machine{
+        display: flex;
         flex-direction: column;
         gap: 20px;
         align-items: center;
@@ -1327,6 +1358,7 @@ span.gray{
 
     .main-machine__box{
         height: 290px;  
+        width: 98%;
     }
 
     .contact__text{
