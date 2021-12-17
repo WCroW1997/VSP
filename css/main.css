@@ -762,7 +762,14 @@ span.gray{
 
 }
 
+.contact__section .second__container{
+    position: relative;
+}
+
 .img__map{
+    position: relative;
+    top: -55px;
+    right: 0;
     border-radius: 10px;
 
 }
@@ -850,6 +857,8 @@ span.gray{
     bottom: 60px;
 
 }
+
+
 
 
 @media screen and (max-width:1570px) {
@@ -1305,9 +1314,9 @@ span.gray{
 
     .img__map{
         order: -1;
-        width: 371px;
-        height: 180px;  
-        margin-top: 20px;
+        width: 65%;
+        top: 20px;
+        max-width: 100%;
     }
 
     .main-machine{
@@ -1317,7 +1326,6 @@ span.gray{
     }
 
     .main-machine__box{
-        width: 70%;
         height: 290px;  
     }
 
