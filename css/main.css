@@ -908,34 +908,33 @@ span.gray{
     }
 
     .header__menu a{
-        font-size: 14px;
-        margin-right: 10px;
-        padding: 21px 6px;
+        font-size: 13px;
+        padding: 21px 5px;
     }
 
     .contact__list li{
-        padding-left: 45px;
+        padding-left: 35px;
 
     }
 
     .contact__list li:first-child{
-        background-position: center left 16px;
+        background-position: center left 8px;
         
     }
 
     .contact__list li:last-child{
-        background-position: center left 16px;
+        background-position: center left 8px;
     }
 
     .header__menu .btn__servieses{
-        padding: 20px;
+        padding: 20px 5px;
     }
 
     .burger{
-        font-size: 14px;
+        font-size: 13px;
     }
     .header__menu li{
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
     .machine__btn img{
@@ -944,7 +943,7 @@ span.gray{
     
 }
 
-@media screen  and (max-width: 1200px){
+@media screen  and (max-width: 1250px){
     .main-machine__box{
         height: 400px;
     }
