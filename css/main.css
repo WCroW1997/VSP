@@ -6,7 +6,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 14px;
 }
 
@@ -388,7 +388,7 @@ body.lock{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    max-width: 145px;
+    max-width: 165px;
 }
 
 .machine__btn img{
@@ -401,7 +401,7 @@ body.lock{
 }
 
 .main-machine__box:first-child a{
-    max-width: 170px;
+    max-width: 190px;
 }
 
 
@@ -966,6 +966,18 @@ span.gray{
         margin-left: 20px;
     }
     
+    .main-machine__box:first-child a{
+        max-width: 175px;
+    }
+    
+    
+    .main-machine__box:last-child a{
+        max-width: 215px;
+    }
+
+    .machine__btn{
+        max-width: 155px;
+    }
 }
 
 @media screen  and (max-width: 1250px){
