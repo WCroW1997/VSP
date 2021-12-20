@@ -388,7 +388,7 @@ body.lock{
     border-radius: 10px;
     display: flex;
     align-items: center;
-    max-width: 230px;
+    max-width: 145px;
 }
 
 .machine__btn img{
@@ -398,6 +398,15 @@ body.lock{
 .main-machine__box:first-child{
     background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url('../img/image 2.png') no-repeat center center;
     background-size: cover;
+}
+
+.main-machine__box:first-child a{
+    max-width: 170px;
+}
+
+
+.main-machine__box:last-child a{
+    max-width: 225px;
 }
 
 .main-machine__box:last-child{
@@ -802,11 +811,12 @@ span.gray{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    max-width: 1100px;
+    /* max-width: 1100px; */
     margin: 0 auto;
+    padding: 0 60px;
 }
 
-.footer__nav__group h3{
+.footer__nav__group h3 , .footer__last h3{
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
@@ -846,6 +856,9 @@ span.gray{
 }
 
 .btn__up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 44px;
     height: 44px;
     background: #FFFFFF;
@@ -855,9 +868,21 @@ span.gray{
     position: absolute;
     top: -120px;
     bottom: 60px;
-
 }
 
+.btn__up img{
+    width: 24px;
+    height: 24px;
+}
+
+
+.footer__last{
+    text-align: right;
+}
+
+.footer__last a{
+    color: #00CDA3;
+}
 
 
 
