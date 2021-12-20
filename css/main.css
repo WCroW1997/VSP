@@ -934,7 +934,7 @@ span.gray{
 
     .header__menu a{
         font-size: 13px;
-        padding: 21px 5px;
+        padding: 21px 8px;
     }
 
     .contact__list li{
@@ -952,15 +952,15 @@ span.gray{
     }
 
     .header__menu .btn__servieses{
-        padding: 20px 5px;
+        padding: 20px 8px;
     }
 
     .burger{
         font-size: 13px;
     }
-    .header__menu li{
-        margin-right: 5px;
-    }
+    /* .header__menu li{
+        margin-right: 20px;
+    } */
 
     .machine__btn img{
         margin-left: 20px;
@@ -977,6 +977,12 @@ span.gray{
 
     .machine__btn{
         max-width: 155px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .header__menu li{
+        margin-right: 8px;
     }
 }
 
