@@ -71,11 +71,12 @@ body.lock{
     list-style: none;
     display: none;
     position: absolute;
-    /* top: 120px; */
+    top: 120px;
     background: #fff;
     width: 385px;
     padding: 20px;
     z-index: 3;
+    box-shadow: 0px 8px 28px rgba(0, 0, 0, 0.36);
 }
 
 
@@ -541,6 +542,7 @@ body.lock{
 .stock__nav__header , .stock__nav__footer{
     display: flex;
     list-style: none;
+    flex-wrap: wrap;
     margin-top: 40px;
 }
 
@@ -1575,5 +1577,66 @@ span.gray{
         top: 600px;
     }
 
+
+}
+
+
+/* style for info.html */
+
+
+.page__tree{
+    margin-top: 45px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E9E9E9;
+    
+}
+
+.tree__list{
+    display: flex;
+    list-style: none;
+    gap: 8px;  
+}
+
+.tree__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tree__item a{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: center;
+    padding: 6px 12px;
+    color: #000000;
+    background: #E9E9E9;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:1250px) {
+    .page__tree{
+        padding-left: 20px;
+        margin-top: 150px;
+    }
+    
+}
+
+@media screen and (max-width:658px){
+    .page__tree{
+        margin-top: 165px;
+    }
+
+    .stock__nav__header , .stock__nav__footer{
+        gap: 10px;
+    }
+
+}
+
+
+@media screen and (max-width:410px){
+    .page__tree{
+        margin-top: 190px;
+    }
 
 }
