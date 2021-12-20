@@ -958,6 +958,7 @@ span.gray{
     .burger{
         font-size: 13px;
         padding: 21px 10px;
+        padding-left: 36px
     }
     /* .header__menu li{
         margin-right: 20px;
@@ -978,6 +979,18 @@ span.gray{
 
     .machine__btn{
         max-width: 155px;
+    }
+
+    .burger::before {
+        top: 23px;
+    }
+
+    .burger span{
+        top: 29px;
+    }
+
+    .burger::after {
+        top: 35px;
     }
 }
 
