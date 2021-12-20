@@ -89,7 +89,7 @@ body.lock{
 
 
 .nav__list li:hover .nav__list__drops{
-    display: inherit;
+    display: inline-block;
 }
 
 
@@ -101,7 +101,7 @@ body.lock{
     text-decoration: underline;
     background: #E9E9E9;
     border-radius: 10px;
-    padding: 25px 10px;
+    padding: 21px 10px;
     font-size: 16px;
     line-height: 17px;  
     padding-left: 36px;
@@ -934,7 +934,7 @@ span.gray{
 
     .header__menu a{
         font-size: 13px;
-        padding: 21px 8px;
+        padding: 20px 8px;
     }
 
     .contact__list li{
@@ -952,7 +952,7 @@ span.gray{
     }
 
     .header__menu .btn__servieses{
-        padding: 20px 8px;
+        padding: 18px 8px;
     }
 
     .burger{
