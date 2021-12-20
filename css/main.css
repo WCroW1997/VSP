@@ -71,7 +71,7 @@ body.lock{
     list-style: none;
     display: none;
     position: absolute;
-    top: 120px;
+    /* top: 120px; */
     background: #fff;
     width: 385px;
     padding: 20px;
@@ -88,8 +88,8 @@ body.lock{
 }
 
 
-.nav__list li:hover .nav__list__drops{
-    display: inline-block;
+.nav .nav__list li:hover .nav__list__drops{
+    display: inherit;
 }
 
 
@@ -101,7 +101,7 @@ body.lock{
     text-decoration: underline;
     background: #E9E9E9;
     border-radius: 10px;
-    padding: 21px 10px;
+    padding: 26px 10px;
     font-size: 16px;
     line-height: 17px;  
     padding-left: 36px;
@@ -957,6 +957,7 @@ span.gray{
 
     .burger{
         font-size: 13px;
+        padding: 21px 10px;
     }
     /* .header__menu li{
         margin-right: 20px;
@@ -1019,6 +1020,10 @@ span.gray{
 
     .nav__list li:first-child{
         display: none;
+    }
+
+    .nav__list__drops li:first-child{
+        display: inherit;
     }
 
     .nav__list{
