@@ -1640,3 +1640,129 @@ span.gray{
     }
 
 }
+
+/* style for vacancies.html */
+
+.vacancies__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.vacancies__text__zone{
+    max-width: 640px;
+}
+
+.vacancies__title{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #DA251C;
+    margin-bottom: 20px;
+}
+
+.vacancies__list{
+    padding-left: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.vacancies__list li:first-child{
+    margin-left: -20px ;
+    list-style: none;
+    font-weight: 500;
+}
+
+.vacancies__text__zp{
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.vacancies__btn{
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    padding: 21px 26px;
+    background: #DA251C;
+    border-radius: 10px;
+    display: inline-block;
+
+}
+
+.vacancies__text:first-child .vacancies__btn{
+    margin-bottom: 60px;
+}
+
+.vacancies__contact{
+    width: 230px;
+}
+
+.contact__face__title{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.contact__face__block{
+    background: #E9E9E9;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name__title{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 16px 0px;
+    color: #031927;
+    width: 120px;
+    text-decoration-line: underline;
+}
+
+.contact__post{
+    color: #7A7A7A;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    width: 136px;
+}
+
+.vacancies__link{
+    margin-top: 16px;
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.vacancies__contact__link{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background-image: url(../img/call_black_24dp\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    padding-left: 34px;
+    display: inline-block;
+    color: #DA251C;
+}
+
+.vacancies__contact__link:last-child{
+    background-image: url(../img/email_black_24dp\ 1.svg);
+    background-repeat: no-repeat;
+    background-position: center left;
+    /* padding-left: 36px; */
+    color: #000000;
+}
