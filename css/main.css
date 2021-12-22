@@ -2311,7 +2311,6 @@ span.gray{
 }
 
 
-
 .specefications__list__item p:first-child{
     color: #7A7A7A;
 }
@@ -2321,12 +2320,129 @@ span.gray{
 }
 
 
-
-
-
-
-
 .specifications{
     display: flex;
     justify-content: space-between;
+}
+
+
+/* style for article.html */
+
+.article__main{
+    margin-top: 60px;
+}
+
+.article__subtitle{
+    margin-bottom: 30px;
+}
+
+.article__img{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.article__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.article__content__text{
+    max-width: 640px;
+    line-height: 24px;
+}
+
+.article__content__text p{
+    margin-bottom: 20px;
+}
+
+.article__youtube__box{
+    background: url('../img/Icon-2.svg') no-repeat center left 17px,#E9E9E9;
+    border-radius: 10px;
+    width: 230px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 18px 17px 18px 77px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.article__youtube__box::after{
+    content: '';
+    position: absolute;
+    top: 76px;
+    left: 104px;
+    border: 16px solid transparent;
+    border-top: 14px solid #E9E9E9;
+}
+
+.article__content__video a{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.article__content__video img{
+    border-radius: 6px; 
+}
+
+.photo__subtitle{
+    background: url('../img/crop_free_black_24dp\ 1.svg') no-repeat center right;
+    padding-right: 30px;
+    line-height: 24px;
+    color: #7A7A7A;
+    display: inline-block;
+}
+
+.photo__grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.photo__block img{
+    border-radius: 10px;
+}
+
+.photo__block{
+    position: relative;
+}
+
+.photo__block:last-child::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 475px;
+    height: 475px;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    border-radius: 10px;
+}
+
+.photo__btn{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hight__one{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 10px;
+    text-decoration: none;
 }
