@@ -2006,7 +2006,7 @@ span.gray{
 }
 
 .full__info{
-    margin-top: 60px;
+    margin: 60px 0;
 }
 
 .full__info__block{
@@ -2070,7 +2070,7 @@ span.gray{
     text-decoration: none;
 }
 
-.full__info__list li:first-child .full__list__link{
+.link__red{
     background: #DA251C;
     color: #FFFFFF;
 }
@@ -2293,4 +2293,40 @@ span.gray{
     background-image: url('../img/settings_black_24dp 1.svg');
     background-position: left 26px center;
     background-repeat: no-repeat;
+}
+
+.specefications__list__item{
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 20px;
+}
+
+.specefications__list__item::after{
+    content: " ";
+    flex-grow: 1;
+    border-bottom: 1px dashed #7A7A7A;
+}
+
+
+
+.specefications__list__item p:first-child{
+    color: #7A7A7A;
+}
+
+.specefications__list__item p:last-child{
+    order: 1;
+}
+
+
+
+
+
+
+
+.specifications{
+    display: flex;
+    justify-content: space-between;
 }
