@@ -2227,6 +2227,18 @@ span.gray{
 .better{
     margin-bottom: 40px;
 }
+.btn__help{
+    background-image: url('../img/help_outline_black_24dp 1.svg');
+    background-position: center left 100px;
+}
+
+.help__btn__second{
+    background-position: center left 105px !important;
+}
+
+.help__btn__center{
+    background-position: center left 34% !important;
+}
 
 /* style for sf-676v2.html */
 
