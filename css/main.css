@@ -2437,6 +2437,7 @@ span.gray{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: none;
 }
 
 .hight__one{
@@ -2511,6 +2512,59 @@ span.gray{
     margin-top: 4px;
 }
 
-.docs__download__btn .underline{
+.docs__download__btn .underline, .photo__grid .underline{
     text-decoration: underline;
+}
+
+
+/* style for rapair.html */
+
+.rapair{
+    margin-top: 60px;
+    line-height: 24px;
+}
+
+.rapair h3{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;  
+}
+
+.rapair h3, .rapair p, .rapair ul{
+    margin-bottom: 20px;
+}
+
+.rapair ul{
+    padding-left: 20px;
+}
+
+.rapair__progress{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.rapair__progress__box{
+    position: relative;
+}
+
+.rapair__progress__box img{
+    border-radius: 10px;
+}
+
+.rapair__label{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 12px 14px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background: #000000;
+    border-radius: 6px;
+}
+
+.rapair__progress__box:last-child .rapair__label{
+    background: #DA251C;
 }
