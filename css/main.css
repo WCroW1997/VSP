@@ -2240,6 +2240,180 @@ span.gray{
     background-position: center left 34% !important;
 }
 
+@media screen  and (max-width: 768px) {
+    .container{
+        width: 90%;
+    }
+
+    .wrapper__none{
+        display: none;
+    }
+
+    .header__wrapper__sf{
+        margin: 0 20px;
+    }
+
+    .wrapper__sf__btn{
+        width: 100%;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+        background:url('../img/made-in-russia-sign-ru\ 1.svg') no-repeat top 20px right 20px,url('../img/header.gif') no-repeat center center;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .wrapper__sf__btn img{
+        width: 35px;
+        height: 35px;
+        margin-bottom: 8px;
+    }
+
+
+    .header__wrapper__sf .wrapper__title{
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .header__wrapper__sf .wrapper__list li::before {
+        background: url(../img/done_black_24dp\ 1\ \(1\).svg) no-repeat;
+    }    
+    
+    .header__wrapper__sf .wrapper__list{
+        margin-bottom: 30px;
+    }
+
+    .header__wrapper__sf .wrapper__btn__zone{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__wrapper__sf .wrapper__btn{
+        flex-basis: 45%;
+    }
+
+    .main__info{
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .info__content{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .info__title{
+        margin-bottom: 20px;
+    }
+
+    .aplication__footer{
+        background-position: top 18px left 26px;
+    }
+
+    .peculiarities__grid{
+        flex-direction: column;
+    }
+
+    .peculiarities__review{
+        flex-direction: column;
+    }
+
+    .review__image__zone{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .pre__review{
+        display: flex;
+        justify-content: center;
+        order: 2;
+        gap: 10px;
+    }
+
+    .peculiarities__btn:first-child{
+        order: 2 ;
+    }
+
+    .peculiarities__btn{
+        padding: 18px 13px;
+        padding-left: 35px;
+        background-position: center left 10px;
+    }
+
+    .peculiarities__btn:last-child{
+        background-position: center left 30px;
+    }
+
+    .full__info__block{
+        flex-direction: column;
+    }
+
+    .full__info__list{
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .full__info__nav{
+        order: -1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .full__download{
+        margin-top: 0;
+    }
+
+    .full__list__link{
+        display: flex;
+        white-space: nowrap;
+    }
+
+
+    .full__info__download__group{
+        order: -1;
+        padding: 16px 0;
+    }
+
+    .full__info .section__title--small{
+        margin-bottom: 0;
+    }
+
+    .full__info__content{
+        margin-top: 30px;
+    }
+
+    .full__info__video img{
+        width: 100%; 
+    }
+
+    .better__plus, .better__minus{
+        width: 330px;
+    }
+
+    .buy__card__zone{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card__header{
+        min-height: 150px;
+    }
+
+    .buy__card:nth-child(2){
+        order: -1;
+    }
+}
+
 /* style for sf-676v2.html */
 
 .header__sf{
